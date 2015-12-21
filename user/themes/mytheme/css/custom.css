@@ -1,0 +1,42 @@
+/* 
+.learn-more-btn:hover {
+	background: rgba(102, 153, 255, 0.6) !important;
+	box-shadow: 0px 1.5px 0px 0px #0066ff;
+}
+ */
+
+/* 
+.learn-more-btn:visited {
+	background: rgba(153, 204, 255, 0.6);
+	box-shadow: 0px 3px 0px 0px #6699ff;
+}
+ */
+
+/* 
+.learn-more-btn {
+	background: rgba(153, 204, 255, 0.6);
+	box-shadow: 0px 3px 0px 0px #6699ff;
+}
+ */
+
+#hero-description {
+	color: #99ccff;
+}
+
+#email-link {
+	color: #8c9398;
+}
+
+#email-link:hover {
+	color: #353535;
+}
+
+#nav-toggle {
+	color: #99ccff;
+}
+
+@media screen and (max-width: 545px) {
+	.hero h1 #new-word {
+		display: block;
+	}
+}

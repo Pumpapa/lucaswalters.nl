@@ -1,0 +1,18 @@
+<footer>
+  <div class="container">
+    <div class="row">
+    {% if site.footer.links %}
+    <div class="col-md-6">
+      <ul class="legals">
+        {% for item in site.footer.links %}
+        <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    <div class="col-md-6 credit">
+      <p>Theme by <a href="http://www.peterfinlan.com/">Peter Finlan</a>, modified by <a href="http://lucaswalters.nl/">Lucas Walters</a>.</p>
+    </div>
+  </div>
+</div>
+</footer>

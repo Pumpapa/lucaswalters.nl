@@ -1,7 +1,18 @@
-title: Lucas Walters
+title: Lucas Walters  # Name of the site
 author:
-  name: Joe Bloggs
-  email: 'joe@test.com'
+  name: Lucas Walters
 metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+    description: 'My personal website.'
 
+# Header customization
+header:
+  title: <span>L</span><span>U</span><span>C</span><span>A</span><span>S</span> <span id="new-word"> </span><span>W</span><span>A</span><span>L</span><span>T</span><span>E</span><span>R</span><span>S</span>
+  description: <h3><div id="hero-description">Software Engineering Student</div></h3>
+  buttons:
+    - text: "More info"
+      link: "#introduction"
+      class: "learn-more-btn"
+
+footer:
+  links:
+    - text: ""

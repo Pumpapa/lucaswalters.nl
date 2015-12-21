@@ -1,46 +1,65 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1449180877,
-    'checksum' => '17c83b07e51c60b76b7533c3a9653c1c',
+    'timestamp' => 1450086023,
+    'checksum' => 'b3ebe950ff44eb2da2702a22862d5ba8',
     'files' => [
         'user/config' => [
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1449180877
+                'modified' => 1449851205
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1449180852
+                'modified' => 1450086022
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1449180852
+                'modified' => 1449851193
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1449180852
+                'modified' => 1448997368
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1449180852
+                'modified' => 1448997368
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1449180852
+                'modified' => 1448997368
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1449180852
+                'modified' => 1448997368
             ]
         ],
         'user/plugins' => [
-            
+            'plugins/error' => [
+                'file' => 'user/plugins/error/error.yaml',
+                'modified' => 1448997368
+            ],
+            'plugins/problems' => [
+                'file' => 'user/plugins/problems/problems.yaml',
+                'modified' => 1448997370
+            ]
         ]
     ],
     'data' => [
+        'plugins' => [
+            'error' => [
+                'enabled' => true,
+                'routes' => [
+                    404 => '/error'
+                ]
+            ],
+            'problems' => [
+                'enabled' => true,
+                'built_in_css' => true
+            ]
+        ],
         'media' => [
             'defaults' => [
                 'type' => 'file',
@@ -279,17 +298,17 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'Grav',
+            'title' => 'Lucas Walters',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@test.com'
+                'name' => 'Lucas Walters',
+                'email' => 'john@email.com'
             ],
             'taxonomies' => [
                 0 => 'category',
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+                'description' => 'My personal website.'
             ],
             'summary' => [
                 'enabled' => true,
@@ -307,6 +326,24 @@ return [
             ],
             'blog' => [
                 'route' => '/blog'
+            ],
+            'header' => [
+                'title' => '<span>L</span><span>U</span><span>C</span><span>A</span><span>S</span> <span id="new-word"> </span><span>W</span><span>A</span><span>L</span><span>T</span><span>E</span><span>R</span><span>S</span>',
+                'description' => '<h3><div id="hero-description">Software Engineering Student</div></h3>',
+                'buttons' => [
+                    0 => [
+                        'text' => 'More info',
+                        'link' => '#introduction',
+                        'class' => 'learn-more-btn'
+                    ]
+                ]
+            ],
+            'footer' => [
+                'links' => [
+                    0 => [
+                        'text' => ''
+                    ]
+                ]
             ]
         ],
         'streams' => [
@@ -353,7 +390,7 @@ return [
                 'alias' => '/home'
             ],
             'pages' => [
-                'theme' => 'antimatter',
+                'theme' => 'mytheme',
                 'order' => [
                     'by' => 'default',
                     'dir' => 'asc'
@@ -376,7 +413,7 @@ return [
                     'twig' => true
                 ],
                 'markdown' => [
-                    'extra' => false,
+                    'extra' => true,
                     'auto_line_breaks' => false,
                     'auto_url_links' => false,
                     'escape_markup' => false,
@@ -410,11 +447,10 @@ return [
                     1 => '.idea'
                 ],
                 'ignore_hidden' => true,
-                'url_taxonomy_filters' => true,
-                'markdown_extra' => false
+                'url_taxonomy_filters' => true
             ],
             'cache' => [
-                'enabled' => true,
+                'enabled' => false,
                 'check' => [
                     'method' => 'file'
                 ],
@@ -445,7 +481,7 @@ return [
                 ]
             ],
             'errors' => [
-                'display' => true,
+                'display' => false,
                 'log' => true
             ],
             'debugger' => [
@@ -477,7 +513,7 @@ return [
             ]
         ],
         'security' => [
-            'salt' => '0ufqKAW6p4QRYz'
+            'salt' => 'd2QEPnx6Aj0Te8'
         ]
     ]
 ];

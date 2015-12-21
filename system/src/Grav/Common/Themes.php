@@ -25,8 +25,6 @@ class Themes extends Iterator
 
     public function __construct(Grav $grav)
     {
-        parent::__construct();
-
         $this->grav = $grav;
         $this->config = $grav['config'];
 
